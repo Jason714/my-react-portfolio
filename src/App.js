@@ -16,10 +16,26 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
-          <Route exact path="/home" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/Contact" component={Contact} />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/home"}
+            component={Home}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/about"}
+            component={About}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/projects"}
+            component={Projects}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/contact"}
+            component={Contact}
+          />
         </Switch>
         <Footer />
       </div>
