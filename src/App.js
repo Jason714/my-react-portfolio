@@ -7,35 +7,18 @@ import Projects from "./pages/projects";
 import Contact from "./pages/contact";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import createHistory from "history/createBrowserHistory";
 
 function App() {
   return (
-    <Router history={createHistory({ basename: process.env.PUBLIC_URL })}>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Nav />
         <Switch>
-          <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
-          <Route
-            exact
-            path={process.env.PUBLIC_URL + "/home"}
-            component={Home}
-          />
-          <Route
-            exact
-            path={process.env.PUBLIC_URL + "/about"}
-            component={About}
-          />
-          <Route
-            exact
-            path={process.env.PUBLIC_URL + "/projects"}
-            component={Projects}
-          />
-          <Route
-            exact
-            path={process.env.PUBLIC_URL + "/contact"}
-            component={Contact}
-          />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/contact" component={Contact} />
         </Switch>
         <Footer />
       </div>
