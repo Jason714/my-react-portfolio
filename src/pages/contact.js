@@ -1,4 +1,5 @@
 import React from "react";
+import Pdf from "../resume/Resume.pdf";
 import "./contact.css";
 
 const Contact = () => {
@@ -26,6 +27,16 @@ const Contact = () => {
                 </li>
                 <li className="list-group-item borderless">
                   <p>Email: jblakecodes@gmail.com</p>
+                </li>
+                <li className="list-group-item borderless">
+                  <a
+                    href={Pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="resume"
+                  >
+                    Download a PDF of my Resume
+                  </a>
                 </li>
               </ul>
             </div>
