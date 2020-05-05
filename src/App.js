@@ -6,11 +6,12 @@ import About from "./pages/about";
 import Projects from "./pages/projects";
 import Contact from "./pages/contact";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <Router>
+    <Router>
+      <div className="App">
         <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
@@ -19,8 +20,9 @@ function App() {
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/Contact" component={Contact} />
         </Switch>
-      </Router>
-    </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

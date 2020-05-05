@@ -1,9 +1,10 @@
 import React from "react";
+import Jumbotron from "../components/Jumbotron";
 
 const Home = () => {
   return (
     <React.Fragment>
-      <h1>Hello World</h1>
+      <Jumbotron />
     </React.Fragment>
   );
 };

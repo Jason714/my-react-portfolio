@@ -1,9 +1,10 @@
 import React from "react";
+import Media from "../components/Media";
 
 const About = () => {
   return (
     <React.Fragment>
-      <h1>Hello from About</h1>
+      <Media />
     </React.Fragment>
   );
 };

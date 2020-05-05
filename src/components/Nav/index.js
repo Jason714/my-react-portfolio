@@ -19,18 +19,39 @@ function Nav() {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
-          <li className="nav-item active">
-            <a className="nav-link" href="/about">
-              About<span className="sr-only">(current)</span>
+          <li className="nav-item">
+            <a
+              className={
+                window.location.pathname === "/about"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+              href="/about"
+            >
+              About
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/projects">
+            <a
+              className={
+                window.location.pathname === "/projects"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+              href="/projects"
+            >
               Projects
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/contact">
+            <a
+              className={
+                window.location.pathname === "/contact"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+              href="/contact"
+            >
               Contact
             </a>
           </li>
