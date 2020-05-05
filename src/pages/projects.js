@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../components/Card";
-import projectData from "..//components/projectData";
+import projectData from "../components/projectData";
 import "./project.css";
 
 const Projects = () => {
