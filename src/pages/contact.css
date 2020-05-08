@@ -1,6 +1,6 @@
 li.borderless {
   border: 0 none;
-  background-color: rgb(255, 255, 255, 0.6);
+  background-color: rgb(255, 255, 255, 0.7);
 }
 
 .contact-area {
@@ -15,7 +15,7 @@ li.borderless {
 }
 
 .contact-form {
-  background-color: rgb(255, 255, 255, 0.7);
+  background-color: rgb(255, 255, 255, 0.8);
 }
 
 .resume {
